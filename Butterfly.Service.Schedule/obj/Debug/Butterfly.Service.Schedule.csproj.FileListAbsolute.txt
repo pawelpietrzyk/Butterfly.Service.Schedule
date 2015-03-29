@@ -1,0 +1,9 @@
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\obj\Debug\Butterfly.Service.Schedule.csprojResolveAssemblyReference.cache
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\Butterfly.Service.Schedule.dll
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\Butterfly.Service.Schedule.pdb
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\butterfly.com.rest.dll
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\EntityFramework.dll
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\butterfly.com.rest.pdb
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\bin\EntityFramework.xml
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\obj\Debug\Butterfly.Service.Schedule.dll
+C:\Repo\Butterfly.Service.Schedule\Butterfly.Service.Schedule\obj\Debug\Butterfly.Service.Schedule.pdb

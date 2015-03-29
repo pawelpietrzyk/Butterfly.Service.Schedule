@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DataModelStoreContainer">
+    <EntitySet Name="DayGroupRelation" EntityType="DataModel.Store.DayGroupRelation" store:Type="Tables" />
+    <EntitySet Name="DayGroupTable" EntityType="DataModel.Store.DayGroupTable" store:Type="Tables" />
+    <EntitySet Name="DayTable" EntityType="DataModel.Store.DayTable" store:Type="Tables" />
+    <EntitySet Name="ScheduleEntry" EntityType="DataModel.Store.ScheduleEntry" store:Type="Tables" />
+    <EntitySet Name="ScheduleParam" EntityType="DataModel.Store.ScheduleParam" store:Type="Tables" />
+    <EntitySet Name="SpecialDayGroupDayRelation" EntityType="DataModel.Store.SpecialDayGroupDayRelation" store:Type="Tables" />
+    <EntitySet Name="SpecialDayGroupTable" EntityType="DataModel.Store.SpecialDayGroupTable" store:Type="Tables" />
+    <EntitySet Name="SpecialDayTable" EntityType="DataModel.Store.SpecialDayTable" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="DayGroupRelation">
+    <Key>
+      <PropertyRef Name="DayGroupId" />
+      <PropertyRef Name="DayId" />
+    </Key>
+    <Property Name="DayGroupId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="DayId" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="DayGroupTable">
+    <Key>
+      <PropertyRef Name="DayGroupId" />
+    </Key>
+    <Property Name="DayGroupId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DayTable">
+    <Key>
+      <PropertyRef Name="DayId" />
+    </Key>
+    <Property Name="DayId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="DayOfWeek" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScheduleEntry">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="ParamId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Hour" Type="int" Nullable="false" />
+    <Property Name="Minute" Type="int" Nullable="false" />
+    <Property Name="RecId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Time" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScheduleParam">
+    <Key>
+      <PropertyRef Name="ParamId" />
+    </Key>
+    <Property Name="ParamId" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DayGroupId" Type="nvarchar" MaxLength="20" />
+    <Property Name="SpecialDateGroupId" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SpecialDayGroupDayRelation">
+    <Key>
+      <PropertyRef Name="SpecialDayGroupId" />
+      <PropertyRef Name="SpecialDayId" />
+    </Key>
+    <Property Name="SpecialDayGroupId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="SpecialDayId" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SpecialDayGroupTable">
+    <Key>
+      <PropertyRef Name="SpecialGroupId" />
+    </Key>
+    <Property Name="SpecialGroupId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SpecialDayTable">
+    <Key>
+      <PropertyRef Name="SpecialDayId" />
+    </Key>
+    <Property Name="SpecialDayId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+</Schema>

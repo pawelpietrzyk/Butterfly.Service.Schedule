@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DataEntities">
+    <EntitySetMapping Name="DayGroupRelation">
+      <EntityTypeMapping TypeName="DataModel.DayGroupRelation">
+        <MappingFragment StoreEntitySet="DayGroupRelation">
+          <ScalarProperty Name="DayGroupId" ColumnName="DayGroupId" />
+          <ScalarProperty Name="DayId" ColumnName="DayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DayGroupTable">
+      <EntityTypeMapping TypeName="DataModel.DayGroupTable">
+        <MappingFragment StoreEntitySet="DayGroupTable">
+          <ScalarProperty Name="DayGroupId" ColumnName="DayGroupId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DayTable">
+      <EntityTypeMapping TypeName="DataModel.DayTable">
+        <MappingFragment StoreEntitySet="DayTable">
+          <ScalarProperty Name="DayId" ColumnName="DayId" />
+          <ScalarProperty Name="DayOfWeek" ColumnName="DayOfWeek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleEntry">
+      <EntityTypeMapping TypeName="DataModel.ScheduleEntry">
+        <MappingFragment StoreEntitySet="ScheduleEntry">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+          <ScalarProperty Name="Minute" ColumnName="Minute" />
+          <ScalarProperty Name="Hour" ColumnName="Hour" />
+          <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleParam">
+      <EntityTypeMapping TypeName="DataModel.ScheduleParam">
+        <MappingFragment StoreEntitySet="ScheduleParam">
+          <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+          <ScalarProperty Name="DayGroupId" ColumnName="DayGroupId" />
+          <ScalarProperty Name="SpecialDateGroupId" ColumnName="SpecialDateGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialDayGroupDayRelation">
+      <EntityTypeMapping TypeName="DataModel.SpecialDayGroupDayRelation">
+        <MappingFragment StoreEntitySet="SpecialDayGroupDayRelation">
+          <ScalarProperty Name="SpecialDayGroupId" ColumnName="SpecialDayGroupId" />
+          <ScalarProperty Name="SpecialDayId" ColumnName="SpecialDayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialDayGroupTable">
+      <EntityTypeMapping TypeName="DataModel.SpecialDayGroupTable">
+        <MappingFragment StoreEntitySet="SpecialDayGroupTable">
+          <ScalarProperty Name="SpecialGroupId" ColumnName="SpecialGroupId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialDayTable">
+      <EntityTypeMapping TypeName="DataModel.SpecialDayTable">
+        <MappingFragment StoreEntitySet="SpecialDayTable">
+          <ScalarProperty Name="SpecialDayId" ColumnName="SpecialDayId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
